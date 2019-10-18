@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "prior-dev"
+  },
+  "targets": {
+      "prior-dev": {
+        "hosting": {
+          "one-qr-dev": [
+            "prior-one-qr-dev"
+          ]
+        }
+      }
+    }
+}

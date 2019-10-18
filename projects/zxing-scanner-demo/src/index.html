@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 
   <!-- Required meta tags -->
@@ -16,8 +17,34 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <app-root class="mat-app-background"></app-root>
   <noscript>Please enable JavaScript to continue using this application.</noscript>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBFBDbWmVrmFtf-Im10t8LMd7o49R7Ruww",
+      authDomain: "prior-dev.firebaseapp.com",
+      databaseURL: "https://prior-dev.firebaseio.com",
+      projectId: "prior-dev",
+      storageBucket: "prior-dev.appspot.com",
+      messagingSenderId: "734196491306",
+      appId: "1:734196491306:web:27a94aa8e9fce4a6a44f53",
+      measurementId: "G-3H60LLH4BD"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
 </body>
+
 </html>

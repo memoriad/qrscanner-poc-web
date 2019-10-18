@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "prior-one-qr-dev",
+    "public": "dist/zxing-scanner-demo",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
