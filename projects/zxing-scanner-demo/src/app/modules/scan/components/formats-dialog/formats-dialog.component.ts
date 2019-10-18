@@ -2,7 +2,7 @@ import { Component, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatSelectionListChange } from '@angular/material/list';
 import { BarcodeFormat } from '@zxing/library';
-import { formatNames, formatsAvailable } from '../barcode-formats';
+import { formatNames, formatsAvailable } from '../../../../barcode-formats';
 
 @Component({
   selector: 'app-formats-dialog',

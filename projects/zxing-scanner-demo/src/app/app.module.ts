@@ -3,11 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { AppInfoDialogComponent } from './app-info-dialog/app-info-dialog.component';
-import { AppInfoComponent } from './app-info/app-info.component';
+import { AppInfoDialogComponent } from './modules/scan/components/app-info-dialog/app-info-dialog.component';
+import { AppInfoComponent } from './modules/scan/components/app-info/app-info.component';
 import { AppUiModule } from './app-ui.module';
 import { AppComponent } from './app.component';
-import { FormatsDialogComponent } from './formats-dialog/formats-dialog.component';
+import { FormatsDialogComponent } from './modules/scan/components/formats-dialog/formats-dialog.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { FormatsDialogComponent } from './formats-dialog/formats-dialog.componen
 
     // Local
     AppUiModule,
+    AppRoutingModule
 
   ],
   declarations: [AppComponent, FormatsDialogComponent, AppInfoComponent, AppInfoDialogComponent],

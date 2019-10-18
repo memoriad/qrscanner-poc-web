@@ -9,13 +9,11 @@ import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ZXingScannerModule } from './public_api';
 
 const UI_MODULES = [
 
   // Angular
-  BrowserAnimationsModule,
   FormsModule,
 
   // Material

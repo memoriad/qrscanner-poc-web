@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { AppUiModule } from '../app-ui.module';
+import { AppUiModule } from '../../../../app-ui.module';
 import { FormatsDialogComponent } from './formats-dialog.component';
 
 

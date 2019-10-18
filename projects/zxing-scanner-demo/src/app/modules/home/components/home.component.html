@@ -1,0 +1,40 @@
+<section class="section">
+    <div class="container is-fluid">
+        <div class="tile is-ancestor">
+            <div class="tile is-vertical is-8">
+                <div class="tile">
+                    <div class="tile is-parent is-vertical">
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-warning">
+                            <p class="title is-3">Scan Qr Code Demo App</p>
+                            <div class="image-container" routerLink="/scan">
+                                <figure class="image is-fullwidth">
+                                    <img class="image-hover" src="/assets/icons/scanqr-icon.png">
+                                </figure>
+                                <div class="middle">
+                                    <div class="text">Click here !</div>
+                                </div>
+                            </div>
+                            <p class="subtitle is-pulled-right">Go to scan page</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" *ngIf="qrResultString">
+    <div class="container is-fluid">
+        <article class="message is-info">
+            <div class="message-header">
+                <p>Result</p>
+                <button class="delete" aria-label="delete" (click)="clearResult()"></button>
+            </div>
+            <div class="message-body">
+                <strong>{{ qrResultString }}</strong>
+            </div>
+        </article>
+    </div>
+</section>
